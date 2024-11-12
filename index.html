@@ -1,184 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To My Prettiest Girl 💖</title>
-  <style>
-    /* CSS Styling */
-    body {
-      background: radial-gradient(circle, #ffcccc, #ffe6e6);
-      font-family: 'Arial', sans-serif;
-      color: #ffffff;
-      text-align: center;
-      overflow: hidden;
-      height: 100vh;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Prettiest Girl 💖</title>
+    <style>
+        /* CSS Styling */
+        body {
+            background: radial-gradient(circle, #ffcccc, #ffe6e6);
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+            height: 100vh;
+            margin: 0;
+        }
 
-    .container {
-      margin-top: 50px;
-      padding: 20px;
-      animation: fade-in 3s ease-in-out;
-    }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            animation: fade-in 3s ease-in-out;
+        }
 
-    .header h1 {
-      font-size: 3rem;
-      color: #ff99cc;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
+        .header h1 {
+            font-size: 3rem;
+            color: #ff99cc;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
 
-    .heartbeat {
-      width: 100px;
-      margin-top: 20px;
-      animation: heartbeat 1.5s infinite;
-    }
+        .heartbeat {
+            width: 100px;
+            margin-top: 20px;
+            animation: heartbeat 1.5s infinite;
+        }
 
-    .message p {
-      font-size: 1.5rem;
-      animation: fade-in 4s ease-in-out;
-      color: #c23c3c;
-    }
+        .message p {
+            font-size: 1.5rem;
+            animation: fade-in 4s ease-in-out;
+            color: #c23c3c;
+        }
 
-    .surprise-btn {
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 1.5rem;
-      color: #fff;
-      background: linear-gradient(45deg, #ff6b6b, #ff8c8c);
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 4px 20px rgba(255, 105, 135, 0.6);
-    }
+        .surprise-btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #fff;
+            background: linear-gradient(45deg, #ff6b6b, #ff8c8c);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 20px rgba(255, 105, 135, 0.6);
+        }
 
-    .surprise-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 25px rgba(255, 105, 135, 0.8);
-    }
+        .surprise-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(255, 105, 135, 0.8);
+        }
 
-    .falling-hearts {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: 10;
-    }
+        .falling-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 10;
+        }
 
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
 
-    @keyframes fade-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-    @keyframes fall {
-      to { transform: translateY(100vh); }
-    }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
 
-    .heart {
-      position: absolute;
-      font-size: 2rem;
-      color: rgba(255, 105, 135, 0.8);
-      opacity: 0.8;
-      animation: fall 5s linear infinite, sway 3s ease-in-out infinite;
-    }
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(255, 105, 135, 0.8);
+            opacity: 0.8;
+            animation: fall 5s linear infinite, sway 3s ease-in-out infinite;
+        }
 
-    @keyframes sway {
-      0%, 100% { transform: translateX(0); }
-      50% { transform: translateX(20px); }
-    }
+        @keyframes sway {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+        }
 
-    .custom-message {
-      position: fixed;
-      bottom: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(255, 182, 193, 0.9);
-      color: #fff;
-      font-size: 1.5rem;
-      padding: 15px 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(255, 105, 135, 0.5);
-      animation: fade-in-out 2.5s ease-in-out;
-    }
+        .custom-message {
+            position: fixed;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 182, 193, 0.9);
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(255, 105, 135, 0.5);
+            animation: fade-in-out 2.5s ease-in-out;
+        }
 
-    @keyframes fade-in-out {
-      0%, 100% { opacity: 0; }
-      50% { opacity: 1; }
-    }
-  </style>
+        @keyframes fade-in-out {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <!-- HTML Structure -->
-  <div class="container">
-    <div class="header">
-      <h1>❤️ I Love You, My Prettiest Girl ❤️</h1>
+    <!-- HTML Structure -->
+    <div class="container">
+        <div class="header">
+            <h1>❤️ I Love You, My Prettiest Girl ❤️</h1>
+        </div>
+        <div class="heart-container">
+            <img src="/akku/heart.jpeg" alt="Heart Beat" class="heartbeat">
+        </div>
+        <div class="message">
+            <p>To the girl who makes my heart beat faster every day. 🥰</p>
+            <p>Every moment with you is pure magic. ✨</p>
+            <p>I can’t wait to make a lifetime of memories together. 💍💞</p>
+        </div>
+        <button class="surprise-btn" onclick="showSurprise()">Why I Love You</button>
+        
+        <!-- Audio element for music -->
+        <audio id="loveAudio">
+            <source src="/akku/love.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="falling-hearts"></div>
     </div>
-    <div class="heart-container">
-      <img src="/akku/heart.jpeg" alt="Heart Beat" class="heartbeat">
-    </div>
-    <div class="message">
-      <p>To the girl who makes my heart beat faster every day. 🥰</p>
-      <p>Every moment with you is pure magic. ✨</p>
-      <p>I can’t wait to make a lifetime of memories together. 💍💞</p>
-    </div>
-    <button class="surprise-btn" onclick="showSurprise()">Why I Love You</button>
-    <audio autoplay loop>
-      <source src="/akku/love.m4a" type="audio/mpeg">
-    </audio>
-    <div class="falling-hearts"></div>
-  </div>
 
-  <!-- JavaScript for animations and interactive messages -->
-  <script>
-    // Falling hearts effect
-    function createHeart() {
-      const heart = document.createElement("div");
-      heart.classList.add("heart");
-      heart.innerText = "❤️";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = Math.random() * 3 + 2 + "s";
-      heart.style.fontSize = Math.random() * 1.5 + 1 + "rem";
-      document.querySelector(".falling-hearts").appendChild(heart);
+    <!-- JavaScript for animations and interactive messages -->
+    <script>
+        // Falling hearts effect
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerText = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+            heart.style.fontSize = Math.random() * 1.5 + 1 + "rem";
+            document.querySelector(".falling-hearts").appendChild(heart);
 
-      // Remove heart after it falls
-      setTimeout(() => {
-        heart.remove();
-      }, 5000);
-    }
+            // Remove heart after it falls
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
 
-    setInterval(createHeart, 400);
+        setInterval(createHeart, 400);
 
-    // Custom messages for "Why I Love You" button
-    function showSurprise() {
-      const messages = [
-        "You're the most beautiful person I've ever met. 😘",
-        "You make me smile every single day. 😊",
-        "I love the way you laugh. ❤️",
-        "Being with you is the best part of my life. 💞",
-        "I can't wait to build our future together! 🏡💍"
-      ];
-      let messageIndex = 0;
+        // Custom messages and audio play for "Why I Love You" button
+        function showSurprise() {
+            const audio = document.getElementById("loveAudio");
+            audio.play(); // Play audio when button is clicked
 
-      // Display each message with a shorter delay and fade-in effect
-      const interval = setInterval(() => {
-        const message = document.createElement("div");
-        message.classList.add("custom-message");
-        message.innerText = messages[messageIndex];
-        document.body.appendChild(message);
-        messageIndex++;
-        setTimeout(() => message.remove(), 1500);
-        if (messageIndex === messages.length) clearInterval(interval);
-      }, 2000); // Reduced time between messages
-    }
-  </script>
+            const messages = [
+                "You're the most beautiful person I've ever met. 😘",
+                "You make me smile every single day. 😊",
+                "I love the way you laugh. ❤️",
+                "Being with you is the best part of my life. 💞",
+                "I can't wait to build our future together! 🏡💍"
+            ];
+            let messageIndex = 0;
+
+            // Display each message with a shorter delay and fade-in effect
+            const interval = setInterval(() => {
+                const message = document.createElement("div");
+                message.classList.add("custom-message");
+                message.innerText = messages[messageIndex];
+                document.body.appendChild(message);
+                messageIndex++;
+                setTimeout(() => message.remove(), 1500);
+                if (messageIndex === messages.length) clearInterval(interval);
+            }, 2000); // Reduced time between messages
+        }
+    </script>
 </body>
+
 </html>
